@@ -1,19 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath "com.android.tools.build:gradle:7.4.2"
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
+plugins {
+    id 'com.android.application' version '8.0.0' apply false // Ajusta versiones según tu proyecto
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false // Si usas Kotlin
 }
 
 task clean(type: Delete) {
